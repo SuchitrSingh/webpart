@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.page1 {
+    background-color: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#page1-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    z-index: 1;
+}
+
+.page2 { 
+    background-color: blue;
+}
+.page3 {
+     background-color: chartreuse;
+      color: black;
+}
+.page4 {
+     background-color: darkgoldenrod;
+}
+.page5 {
+     background-color: firebrick; 
+}
+.page6 {
+     background-color: green;
+}
+.page7 {
+     background-color: hotpink; 
+}
+.page8 {
+     background-color: indigo; 
+}
+.page9 {
+     background-color: khaki;
+      color: black;
+}
+
+
+
+html, body, .page {
+  block-size: 100%;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+.page {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
